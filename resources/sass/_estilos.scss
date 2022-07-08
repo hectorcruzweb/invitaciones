@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Antic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap");
+
+body,
+html,
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Antic", sans-serif;
+  color: #46321d;
+}
+
+.pt-70 {
+  padding-top: 70px;
+}
+
+.mt-21 {
+  margin-top: 70px;
+}
+
+section {
+  position: relative;
+  max-width: 90%;
+  margin: 21px auto 0 auto !important;
+  * {
+    text-align: center !important;
+  }
+}
+
+#header {
+  position: relative;
+  background-image: url("../../public/images/fotos/1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 576px;
+  z-index: -1;
+  color: #fff;
+  text-transform: uppercase;
+
+  p {
+    margin-top: 21px;
+    font-size: 24px;
+    letter-spacing: 3px;
+    color: #fff;
+  }
+  .bg-header {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /*background: rgba(33, 71, 44, .2);*/
+  }
+
+  .ryr {
+    width: fit-content;
+    background: rgba(33, 71, 44, 0.9);
+    padding: 8px 14px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 42px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+h1 {
+  margin: 0 !important;
+  font-family: "Glass Antiqua", cursive;
+  font-size: 30px;
+  line-height: 28.8px;
+  color: #0c2917;
+}
+
+.we-marry {
+  h1 {
+    margin-top: 32px !important;
+  }
+  letter-spacing: 2px;
+  text-align: center;
+  p {
+    font-size: 18px !important;
+    line-height: 28.8px;
+    width: 70%;
+    margin: 38px auto 0 auto;
+
+    span {
+      color: #0c2917;
+    }
+  }
+}
+
+.block {
+  h1 {
+    padding-bottom: 32px;
+  }
+  img {
+    width: 100%;
+  }
+  padding-bottom: 35px;
+  .datos {
+    margin-top: 35px;
+    h2 {
+      font-size: 20px;
+      color: #0c2917;
+    }
+    * {
+      margin-top: 21px;
+      color: #46321d;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 42px !important;
+      padding: 4px 10px;
+      border: 1px solid #9b793b;
+      border-radius: 4px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #9b793b;
+      font-size: 14px;
+      line-height: 28.8px;
+    }
+
+    .fecha {
+      font-size: 12px;
+    }
+
+    .salon {
+      font-size: 16px;
+      line-height: 25.6px;
+      color: #46321d;
+    }
+
+    .direccion {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 17px;
+      font-weight: bold;
+      line-height: 28.8px;
+      color: #0c2917;
+    }
+  }
+
+  /*
+     <h2>CEREMONIA RELIGIOSA</h2>
+          <p class="fecha">03 SEPTIEMBRE 2022 | 19:00 H</p>
+          <p class="direccion">TERRAZA, CLUB DE PLAYA HOTEL EL CID MARINA</p>
+          <p class="salon">El CID Mazatlán</p>
+          <a href="#"> ver en el mapa </a>
+    */
+}
+.cena {
+  margin-top: 21px;
+}
+.confirmar {
+  h1 {
+    margin: 48px 0px 32px 0px !important;
+  }
+  padding: 0px;
+  margin: 0px;
+  .codigo {
+    p {
+      &:first-child {
+        font-family: "Times New Roman", Times, serif;
+        color: #0c2917;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      font-size: 12px;
+      margin-top: 12px;
+      span {
+        color: #0c2917;
+      }
+    }
+    h2 {
+      margin-top: 27px;
+      margin-bottom: 32px;
+      font-size: 18px;
+      color: #0c2917;
+    }
+  }
+  strong {
+    color: #0c2917;
+  }
+}
+
+.img-svg {
+  width: 42px !important;
+  margin: 14px 0px;
+}
+
+form {
+  * {
+    display: block;
+  }
+  input,
+  select {
+    width: 100% !important;
+    margin-top: 7px;
+    font-size: 15px;
+    line-height: 28.8px;
+    box-sizing: border-box;
+    border: 2px solid #0c2917;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    text-transform: uppercase;
+    color: #0c2917;
+    padding: 5px 10px;
+    text-align: left !important;
+  }
+  select {
+    padding: 9px 10px;
+    margin: 0;
+    text-align-last: left;
+  }
+  label {
+    margin-top: 21px;
+    color: #0c2917;
+    font-size: 20px;
+    line-height: 28.8px;
+    text-align: left !important;
+  }
+  button {
+    margin-top: 21px;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    background-color: #0c2917;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.show {
+  display: none;
+}
+
+.regalo {
+  margin-top: 45px !important;
+}
+
+.footer {
+  margin-top: -4px !important;
+  max-width: 100%;
+  padding: 50px 10px 50px 10px;
+  background-color: #0c2917;
+  img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .show {
+    display: block;
+  }
+}
