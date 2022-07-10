@@ -11,7 +11,9 @@
 </head>
 
 <body>
+     {{$datos->data}}
     <div class="show">
+       
         <section id="header" class="text-center">
             <div class="bg-header"></div>
             <div class="ryr">

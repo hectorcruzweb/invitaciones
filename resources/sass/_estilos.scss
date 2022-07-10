@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Antic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap");
-
 body,
 html,
 * {
@@ -9,6 +8,8 @@ html,
   font-family: "Antic", sans-serif;
   color: #46321d;
 }
+
+.show{
 
 .pt-70 {
   padding-top: 70px;
@@ -243,9 +244,6 @@ form {
   text-align: center;
 }
 
-.show {
-  display: none;
-}
 
 .regalo {
   margin-top: 45px !important;
@@ -261,6 +259,9 @@ form {
   }
 }
 
+
+  display: none;
+}
 @media (max-width: 767.98px) {
   .show {
     display: block;

@@ -25,4 +25,10 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function invitacion()
+    {
+        echo request()->get('data');
+        //return view('welcome',['datos'=>$data]);
+    }
 }
