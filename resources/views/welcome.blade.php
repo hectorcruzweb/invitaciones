@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="<?= url('css/app.css') ?>" />
-    <title>Document</title>
+    <title>Confirmar Asistencia.</title>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
             <h1>¡ NOS CASAMOS !</h1>
             <p>
                 Hola <span>Héctor Raúl Cruz Pérez</span>, te invitamos a que vivas
-                este momento tan especial junto a nosotros, padres y amigos.
+                este momento tan especial junto a padres y amigos.
             </p>
         </section>
 
@@ -59,8 +59,8 @@
             <div class="datos">
                 <h2>CEREMONIA CIVIL</h2>
                 <p class="fecha">03 SEPTIEMBRE 2022 | 19:00 H</p>
-                <p class="direccion">TERRAZA, CLUB DE PLAYA HOTEL EL CID MARINA</p>
-                <p class="salon">El CID Mazatlán</p>
+                <p class="direccion">TERRAZA, CLUB DE PLAYA</p>
+                <p class="salon">Hotel El CID Mazatlán</p>
                 <a href="https://goo.gl/maps/mERqjFYxS4YYCAcK9" target="_blank"> ver en el mapa </a>
             </div>
         </section>
@@ -70,14 +70,14 @@
             <div class="datos">
                 <h2>RECEPCIÓN</h2>
                 <p class="fecha">03 SEPTIEMBRE 2022 | 20:00 H</p>
-                <p class="direccion">SALÓN, CLUB DE PLAYA HOTEL EL CID MARINA</p>
-                <p class="salon">El CID Mazatlán</p>
+                <p class="direccion">SALÓN, CLUB DE PLAYA</p>
+                 <p class="salon">Hotel El CID Mazatlán</p>
                 <a href="https://goo.gl/maps/mERqjFYxS4YYCAcK9" target="_blank"> ver en el mapa </a>
             </div>
         </section>
 
         <section class="block" data-aos="fade-down">
-            <img src="{{ URL::to('/') }}/images/ryrimg.jpg" alt="" />
+            <img src="{{ URL::to('/') }}/images/1.jpg" alt="" />
         </section>
 
         <section class="confirmar padding-center">
@@ -91,9 +91,11 @@
             </div>
             <div class="cena codigo">
                 <p>MENÚ DEL EVENTO</p>
+                <h2>Primer Tiempo</h2>
                 <img class="img-svg" src="{{ URL::to('/') }}/images/menu.svg" alt="" />
                 <p><STRong><span>CREMA SUIZA:</span></STRong></p>
                 <P>Crema de 3 Quesos (Roquefort, chéddar y de cabra) con pimiento.</P>
+                <h2>Segundo Tiempo</h2>
                 <p><STRong><span>SUPREMA DE POLLO PHILADELPHIA:</span></STRong></p>
                 <p>Rellena con un mousse de camarón y espárragos acompañada con pure de papa y crocante de queso
                     parmesano.</p>
@@ -104,7 +106,7 @@
 
             <form action="#">
                 <label for="#txtNombre">Ingrese su Nombre Completo</label>
-                <input type="text" name="txtNombre" id="txtNombre" value="hector raul cruz perez">
+                <input type="text" name="txtNombre" id="txtNombre" value="<?= ENV('APP_ENV')?'hector raul cruz perez':''?>">
                 <label for="#slAsiste">¿Asistirá?</label>
                 <select name="slAsiste" id="slAsiste">
                     <option value="">Si, asistiré. Gracias.</option>
@@ -121,7 +123,7 @@
         </section>
 
         <section class="block regalo" data-aos="fade-down">
-            <img src="4.jpg" alt="" />
+            <img class="" src="{{ URL::to('/') }}/images/4.jpg" alt="" />
             <div class="datos">
                 <h2>MESA DE REGALOS</h2>
                 <p class="fecha">El mejor regalo es tu presencia, pero si deseas hacernos llegar un bonito detalle lo

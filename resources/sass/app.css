@@ -1,5 +1,6 @@
-@import url(https://fonts.googleapis.com/css2?family=Antic&display=swap);@import url(https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap);@charset "UTF-8";
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Antic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap");
 body,
 html,
 * {
@@ -29,7 +30,7 @@ section * {
 
 #header {
   position: relative;
-  background-image: url(/images/ryrimg.jpg?6941f85d242ba0995cf3bdd3ca08548b);
+  background-image: url("../../public/images/fotos/ryrimg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -222,8 +223,10 @@ form select {
   margin-top: 7px;
   font-size: 15px;
   line-height: 28.8px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 2px solid #0c2917;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   outline: none;
   text-transform: uppercase;
@@ -235,8 +238,7 @@ form select {
 form select {
   padding: 9px 10px;
   margin: 0;
-  -moz-text-align-last: left;
-       text-align-last: left;
+  text-align-last: left;
 }
 
 form label {
@@ -286,4 +288,4 @@ form button {
     display: block;
   }
 }
-
+/*# sourceMappingURL=app.css.map */

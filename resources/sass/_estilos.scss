@@ -29,7 +29,7 @@ section {
 
 #header {
   position: relative;
-  background-image: url("../../public/images/fotos/1.jpg");
+  background-image: url("../../public/images/fotos/ryrimg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -60,7 +60,7 @@ section {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    bottom: 42px;
+    bottom: 12px;
     img {
       width: 100%;
     }
@@ -154,6 +154,9 @@ h1 {
 }
 .cena {
   margin-top: 21px;
+   h2{
+    font-size: 16px !important;
+  }
 }
 .confirmar {
   h1 {
@@ -188,7 +191,7 @@ h1 {
 }
 
 .img-svg {
-  width: 42px !important;
+  width: 48px !important;
   margin: 14px 0px;
 }
 
