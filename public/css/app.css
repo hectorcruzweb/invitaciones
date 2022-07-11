@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Antic&display=swap);@import url(https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css2?family=Antic&display=swap);@import url(https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.6.1 (https://getbootstrap.com/)
@@ -10962,29 +10962,33 @@ html,
   color: #46321d;
 }
 
-.show {
+.show-contenido {
   display: none;
 }
 
-.show .pt-70 {
+.show-contenido .pt-70 {
   padding-top: 70px;
 }
 
-.show .mt-21 {
+.show-contenido .mt-21 {
   margin-top: 70px;
 }
 
-.show section {
+.show-contenido img {
+  border-radius: 4px;
+}
+
+.show-contenido section {
   position: relative;
   max-width: 90%;
   margin: 21px auto 0 auto !important;
 }
 
-.show section * {
+.show-contenido section * {
   text-align: center !important;
 }
 
-.show #header {
+.show-contenido #header {
   position: relative;
   background-image: url(/images/ryrimg.jpg?6941f85d242ba0995cf3bdd3ca08548b);
   background-size: cover;
@@ -10996,21 +11000,21 @@ html,
   text-transform: uppercase;
 }
 
-.show #header p {
+.show-contenido #header p {
   margin-top: 21px;
   font-size: 24px;
   letter-spacing: 3px;
   color: #fff;
 }
 
-.show #header .bg-header {
+.show-contenido #header .bg-header {
   position: absolute;
   height: 100%;
   width: 100%;
   /*background: rgba(33, 71, 44, .2);*/
 }
 
-.show #header .ryr {
+.show-contenido #header .ryr {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -11024,11 +11028,11 @@ html,
   bottom: 12px;
 }
 
-.show #header .ryr img {
+.show-contenido #header .ryr img {
   width: 100%;
 }
 
-.show h1 {
+.show-contenido h1 {
   margin: 0 !important;
   font-family: "Glass Antiqua", cursive;
   font-size: 30px;
@@ -11036,60 +11040,60 @@ html,
   color: #0c2917;
 }
 
-.show .we-marry {
+.show-contenido .we-marry {
   letter-spacing: 2px;
   text-align: center;
 }
 
-.show .we-marry h1 {
+.show-contenido .we-marry h1 {
   margin-top: 32px !important;
 }
 
-.show .we-marry p {
+.show-contenido .we-marry p {
   font-size: 18px !important;
   line-height: 28.8px;
   width: 70%;
   margin: 38px auto 0 auto;
 }
 
-.show .we-marry p span {
+.show-contenido .we-marry p span {
   color: #0c2917;
 }
 
-.show .block {
+.show-contenido .block {
   padding-bottom: 35px;
   /*
-     <h2>CEREMONIA RELIGIOSA</h2>
-          <p class="fecha">03 SEPTIEMBRE 2022 | 19:00 H</p>
-          <p class="direccion">TERRAZA, CLUB DE PLAYA HOTEL EL CID MARINA</p>
-          <p class="salon">El CID Mazatlán</p>
-          <a href="#"> ver en el mapa </a>
-    */
+   <h2>CEREMONIA RELIGIOSA</h2>
+        <p class="fecha">03 SEPTIEMBRE 2022 | 19:00 H</p>
+        <p class="direccion">TERRAZA, CLUB DE PLAYA HOTEL EL CID MARINA</p>
+        <p class="salon">El CID Mazatlán</p>
+        <a href="#"> ver en el mapa </a>
+  */
 }
 
-.show .block h1 {
+.show-contenido .block h1 {
   padding-bottom: 32px;
 }
 
-.show .block img {
+.show-contenido .block img {
   width: 100%;
 }
 
-.show .block .datos {
+.show-contenido .block .datos {
   margin-top: 35px;
 }
 
-.show .block .datos h2 {
+.show-contenido .block .datos h2 {
   font-size: 20px;
   color: #0c2917;
 }
 
-.show .block .datos * {
+.show-contenido .block .datos * {
   margin-top: 21px;
   color: #46321d;
 }
 
-.show .block .datos a {
+.show-contenido .block .datos a {
   display: inline-block;
   margin-top: 42px !important;
   padding: 4px 10px;
@@ -11102,17 +11106,17 @@ html,
   line-height: 28.8px;
 }
 
-.show .block .datos .fecha {
+.show-contenido .block .datos .fecha {
   font-size: 12px;
 }
 
-.show .block .datos .salon {
+.show-contenido .block .datos .salon {
   font-size: 16px;
   line-height: 25.6px;
   color: #46321d;
 }
 
-.show .block .datos .direccion {
+.show-contenido .block .datos .direccion {
   font-family: "Times New Roman", Times, serif;
   font-size: 17px;
   font-weight: bold;
@@ -11120,61 +11124,61 @@ html,
   color: #0c2917;
 }
 
-.show .cena {
+.show-contenido .cena {
   margin-top: 21px;
 }
 
-.show .cena h2 {
+.show-contenido .cena h2 {
   font-size: 16px !important;
 }
 
-.show .confirmar {
+.show-contenido .confirmar {
   padding: 0px;
   margin: 0px;
 }
 
-.show .confirmar h1 {
+.show-contenido .confirmar h1 {
   margin: 48px 0px 32px 0px !important;
 }
 
-.show .confirmar .codigo p {
+.show-contenido .confirmar .codigo p {
   font-size: 12px;
   margin-top: 12px;
 }
 
-.show .confirmar .codigo p:first-child {
+.show-contenido .confirmar .codigo p:first-child {
   font-family: "Times New Roman", Times, serif;
   color: #0c2917;
   font-weight: bold;
   font-size: 16px;
 }
 
-.show .confirmar .codigo p span {
+.show-contenido .confirmar .codigo p span {
   color: #0c2917;
 }
 
-.show .confirmar .codigo h2 {
+.show-contenido .confirmar .codigo h2 {
   margin-top: 27px;
   margin-bottom: 32px;
   font-size: 18px;
   color: #0c2917;
 }
 
-.show .confirmar strong {
+.show-contenido .confirmar strong {
   color: #0c2917;
 }
 
-.show .img-svg {
+.show-contenido .img-svg {
   width: 48px !important;
   margin: 14px 0px;
 }
 
-.show form * {
+.show-contenido form * {
   display: block;
 }
 
-.show form input,
-.show form select {
+.show-contenido form input,
+.show-contenido form select {
   width: 100% !important;
   margin-top: 7px;
   font-size: 15px;
@@ -11189,14 +11193,14 @@ html,
   text-align: left !important;
 }
 
-.show form select {
+.show-contenido form select {
   padding: 9px 10px;
   margin: 0;
   -moz-text-align-last: left;
        text-align-last: left;
 }
 
-.show form label {
+.show-contenido form label {
   margin-top: 21px;
   color: #0c2917;
   font-size: 20px;
@@ -11204,7 +11208,7 @@ html,
   text-align: left !important;
 }
 
-.show form button {
+.show-contenido form button {
   margin-top: 21px;
   display: block;
   padding: 10px;
@@ -11215,27 +11219,27 @@ html,
   border-radius: 4px;
 }
 
-.show .text-center {
+.show-contenido .text-center {
   text-align: center;
 }
 
-.show .regalo {
+.show-contenido .regalo {
   margin-top: 45px !important;
 }
 
-.show .footer {
+.show-contenido .footer {
   margin-top: -4px !important;
   max-width: 100%;
   padding: 50px 10px 50px 10px;
   background-color: #0c2917;
 }
 
-.show .footer img {
+.show-contenido .footer img {
   width: 100%;
 }
 
 @media (max-width: 767.98px) {
-  .show {
+  .show-contenido {
     display: block;
   }
 }

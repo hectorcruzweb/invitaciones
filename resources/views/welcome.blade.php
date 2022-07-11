@@ -11,14 +11,11 @@
 </head>
 
 <body>
-     {{$datos->data}}
-    <div class="show">
-       
+    <div class="show-contenido">
         <section id="header" class="text-center">
             <div class="bg-header"></div>
             <div class="ryr">
                 <img src="{{ URL::to('/') }}/images/ryr.svg" alt="" />
-
                 <?php
                 $now = time(); // or your date as well
                 $your_date = strtotime('2022-09-03');
@@ -73,7 +70,7 @@
                 <h2>RECEPCIÓN</h2>
                 <p class="fecha">03 SEPTIEMBRE 2022 | 20:00 H</p>
                 <p class="direccion">SALÓN, CLUB DE PLAYA</p>
-                 <p class="salon">Hotel El CID Mazatlán</p>
+                <p class="salon">Hotel El CID Mazatlán</p>
                 <a href="https://goo.gl/maps/mERqjFYxS4YYCAcK9" target="_blank"> ver en el mapa </a>
             </div>
         </section>
@@ -108,7 +105,8 @@
 
             <form action="#">
                 <label for="#txtNombre">Ingrese su Nombre Completo</label>
-                <input type="text" name="txtNombre" id="txtNombre" value="<?= ENV('APP_ENV')?'hector raul cruz perez':''?>">
+                <input type="text" name="txtNombre" id="txtNombre"
+                    value="<?= ENV('APP_ENV') ? 'hector raul cruz perez' : '' ?>">
                 <label for="#slAsiste">¿Asistirá?</label>
                 <select name="slAsiste" id="slAsiste">
                     <option value="">Si, asistiré. Gracias.</option>

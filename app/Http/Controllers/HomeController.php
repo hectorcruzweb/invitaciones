@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        //$this->middleware('auth');
     }
 
     /**
@@ -28,7 +28,8 @@ class HomeController extends Controller
 
     public function invitacion()
     {
-        echo request()->get('data');
-        //return view('welcome',['datos'=>$data]);
+        echo 1;
+        //echo request()->get('data');
+        //return view('welcome');
     }
 }
