@@ -111,7 +111,7 @@
                         </select>
                         <label for="#slPAses">Pases Disponibles Confirmados</label>
                         <select name="slPAses" id="slPAses">
-                            @for ($i = $data['pases_disponibles']; $i > 0; $i++)
+                            @for ($i = $data['pases_disponibles']; $i > 0; $i--)
                                 @if ($i > 1)
                                     <option value="{{ $i }}">{{ $i }} Pases</option>
                                 @else

@@ -32,7 +32,7 @@ class HomeController extends Controller
     public function invitacion(Request $request)
     {
         if (isset($request->data)) {
-            $invitado = INVITADOS::where('id', '=', (string) base64_decode($request->data))->get();
+            $invitado = INVITADOS::where('id', '=', base64_decode($request->data))->get();
             if (count($invitado) == 0) {
                 return redirect('home');
             }
