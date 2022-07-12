@@ -11238,9 +11238,27 @@ html,
   width: 100%;
 }
 
+.qr {
+  width: 50%;
+  text-align: center !important;
+  margin: 21px auto 0 auto !important;
+}
+
+.qr h1 {
+  font-size: 42px !important;
+}
+
+.qr svg {
+  margin-top: 46px;
+}
+
 @media (max-width: 767.98px) {
   .show-contenido {
     display: block;
+  }
+
+  .qr {
+    display: none;
   }
 }
 
@@ -11274,20 +11292,5 @@ html,
 
 .tabla-invitados .enviar-whats {
   width: 24px;
-}
-
-.qr {
-  display: block;
-  width: 50%;
-  text-align: center !important;
-  margin: 21px auto 0 auto !important;
-}
-
-.qr h1 {
-  font-size: 42px !important;
-}
-
-.qr svg {
-  margin-top: 46px;
 }
 

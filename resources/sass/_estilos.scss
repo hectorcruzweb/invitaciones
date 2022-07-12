@@ -263,9 +263,25 @@ html,
 
   display: none;
 }
+
+.qr {
+  h1 {
+    font-size: 42px !important;
+  }
+  width: 50%;
+  text-align: center !important;
+  margin: 21px auto 0 auto !important;
+  svg {
+    margin-top: 46px;
+  }
+}
+
 @media (max-width: 767.98px) {
   .show-contenido {
     display: block;
+  }
+  .qr {
+    display: none;
   }
 }
 
@@ -296,19 +312,5 @@ html,
 
   .enviar-whats {
     width: 24px;
-  }
-}
-
-.qr {
-  h1 {
-    font-size: 42px !important;
-  }
-
-  display: block;
-  width: 50%;
-  text-align: center !important;
-  margin: 21px auto 0 auto !important;
-  svg {
-    margin-top: 46px;
   }
 }
