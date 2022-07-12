@@ -6,8 +6,7 @@
             <div class="w-100">
                 <div class="card">
                     <div class="card-header">Lista de Invitados</div>
-                    <div class="card-body">
-
+                    <div class="card-body" style="overflow-x:auto;">
                         <table class="tabla-invitados">
                             <thead>
                                 <th>Invitado</th>
