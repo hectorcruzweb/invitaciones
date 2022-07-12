@@ -39,7 +39,7 @@
         <section class="we-marry padding-center">
             <h1>¡ NOS CASAMOS !</h1>
             <p>
-                Hola <span>{{ $data['invitado'] }}</span>, te invitamos a que vivas
+                Hola <strong><span>{{ $data['invitado'] }}</span></strong>, te invitamos a que vivas
                 este momento tan especial junto a padres y amigos.
             </p>
         </section>
