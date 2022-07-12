@@ -134,10 +134,18 @@
                         </button>
                     </form>
                 </div>
-                <div class="alert alert-success mt-4 d-none" role="alert">
+                <div class="alert alert-success suc mt-4 d-none" role="alert">
                     Se ha confirmado su asistencia a nuestra boda. Gracias.
                 </div>
-                <div class="alert alert-danger  mt-4 d-none" role="alert">
+                <div class="alert alert-danger dan mt-4 d-none" role="alert">
+                    Lamentamos que no puedas asistir a nuestra boda.
+                </div>
+            @elseif($data['status'] == 1)
+                <div class="alert alert-success mt-4 py-4" role="alert">
+                    Se ha confirmado su asistencia a nuestra boda. Gracias.
+                </div>
+            @else
+                <div class="alert alert-danger  mt-4 py-4" role="alert">
                     Lamentamos que no puedas asistir a nuestra boda.
                 </div>
             @endif
@@ -174,8 +182,8 @@
         let pases = $('#slPAses').val();
         $.ajax({
             beforeSend: function() {
-                $('.alert-danger').addClass('d-none');
-                $('.alert-success').addClass('d-none');
+                $('.dan').addClass('d-none');
+                $('.suc').addClass('d-none');
                 $('.spinner-border').removeClass('d-none');
             },
             url: "/submit-form",
@@ -192,9 +200,9 @@
                     $('.spinner-border').addClass('d-none');
                     if (response.success == 1) {
                         $("#aceptar").hide();
-                        $('.alert-success').removeClass('d-none');
+                        $('.suc').removeClass('d-none');
                     } else {
-                        $('.alert-danger').removeClass('d-none');
+                        $('.dan').removeClass('d-none');
                         //console.log(response);
                     }
                     setTimeout(() => {

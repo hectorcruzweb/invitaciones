@@ -31,6 +31,10 @@
                                         <td>{{ $invitado['pases_confirmados'] }}</td>
                                         <td>{{ $invitado['whatsapp'] }}</td>
                                         <td>{{ $invitado['status_texto'] }}</td>
+                                        <td>
+                                            {{ $invitado['link'] }}
+                                        </td>
+
                                     </tr>
                                 @endforeach
                             </tbody>
