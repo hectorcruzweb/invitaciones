@@ -7,6 +7,7 @@
                 <div class="card">
                     <div class="card-header">Lista de Invitados</div>
                     <div class="card-body" style="overflow-x:auto;">
+                        <button id="print" class="btn-success p-1 float-right mb-4">Imprimir Lista</button>
                         <table class="tabla-invitados">
                             <thead>
                                 <th>Invitado</th>
@@ -15,7 +16,6 @@
                                 <th>Pases Aceptados</th>
                                 <th>WhatsApp</th>
                                 <th>Status</th>
-
                             </thead>
                             <tbody>
                                 @foreach ($invitados as $invitado)
@@ -31,10 +31,6 @@
                                         <td>{{ $invitado['pases_confirmados'] }}</td>
                                         <td>{{ $invitado['whatsapp'] }}</td>
                                         <td>{{ $invitado['status_texto'] }}</td>
-                                        <td>
-                                            {{ $invitado['link'] }}
-                                        </td>
-
                                     </tr>
                                 @endforeach
                             </tbody>
@@ -44,4 +40,10 @@
             </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $("#print").click(function() {
+            window.print();
+        });
+    </script>
 @endsection
