@@ -46,7 +46,14 @@
                                         <td>{{ $invitado['pases_disponibles'] }}</td>
                                         <td>{{ $invitado['pases_confirmados'] }}</td>
                                         <td>{{ $invitado['whatsapp'] }}</td>
-                                        <td>{{ $invitado['status_texto'] }}</td>
+                                        @if ($invitado['status'] == 0)
+                                            <td>{{ $invitado['status_texto'] }}</td>
+                                        @elseif($invitado['status'] == 1)
+                                            <td class="text-success">{{ $invitado['status_texto'] }}</td>
+                                        @else
+                                            <td class="text-danger">{{ $invitado['status_texto'] }}</td>
+                                        @endif
+
 
                                     </tr>
                                 @endforeach
