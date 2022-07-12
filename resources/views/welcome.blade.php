@@ -101,7 +101,7 @@
                 <P>Crema de 3 Quesos (Roquefort, chéddar y de cabra) con pimiento.</P>
                 <h2>Segundo Tiempo</h2>
                 <p><STRong><span>SUPREMA DE POLLO PHILADELPHIA:</span></STRong></p>
-                <p>Rellena con un mousse de camarón y espárragos acompañada con pure de papa y crocante de queso
+                <p>Rellena con un mousse de camarón, acompañada de espárragos, pure de papa y crocante de queso
                     parmesano.</p>
             </div>
 
