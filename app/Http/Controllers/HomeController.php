@@ -37,6 +37,8 @@ class HomeController extends Controller
                 return redirect('home');
             }
             $invitado[0]['key'] = base64_encode($invitado[0]['id']);
+
+            $invitado[0]['link'] = Env('APP_URL') . 'invitacion?data=' .  $invitado[0]['key'];
             return view('welcome', ['data' => $invitado[0]]);
         } else {
             //echo 'Error';

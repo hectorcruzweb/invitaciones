@@ -12,6 +12,12 @@
 </head>
 
 <body>
+    <div class="qr">
+        <h1>PARA PODER VER ESTA INVITACIÓN DIGITAL POR FAVOR ESCANEÉ EL SIGUIENTE CÓDIGO QR EN SU CELULAR.</h1>
+        <?php
+        echo QrCode::size(250)->generate("'" . $data['link'] . "'");
+        ?>
+    </div>
     <div class="show-contenido">
         <section id="header" class="text-center">
             <div class="bg-header"></div>
@@ -187,13 +193,13 @@
                     if (response.success == 1) {
                         $("#aceptar").hide();
                         $('.alert-success').removeClass('d-none');
-                        setTimeout(() => {
-                            location.reload();
-                        }, 5000);
                     } else {
-                        $('.alert-danger').addClass('d-none');
-                        console.log(response);
+                        $('.alert-danger').removeClass('d-none');
+                        //console.log(response);
                     }
+                    setTimeout(() => {
+                        location.reload();
+                    }, 5000);
                 }, 2000);
             },
             error: function(response) {
