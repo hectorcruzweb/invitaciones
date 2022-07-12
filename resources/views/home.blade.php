@@ -12,7 +12,7 @@
                                 <th>Invitado</th>
                                 <th>Enviar Invitación</th>
                                 <th>Pases Disponibles</th>
-                                <th>Pases Confirmados</th>
+                                <th>Pases Aceptados</th>
                                 <th>WhatsApp</th>
                                 <th>Status</th>
 
