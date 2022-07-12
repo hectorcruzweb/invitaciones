@@ -59,7 +59,7 @@ class HomeController extends Controller
 
             $id = $invitado['id'];
             $key = base64_encode($id);
-            $invitado['link'] = Env('APP_URL') . 'invitacion/' . $key;
+            $invitado['link'] = Env('APP_URL') . 'invitacion?data=' . $key;
             $text = str_replace(' ', "%20", 'Hola ' . $invitado['invitado'] . ', te invitamos a nuestra boda. Haz click aquí para confirmar tu asistencia. ' . Env('APP_URL') . 'invitacion?data=' . $key);
             $invitado['url'] = 'https://api.whatsapp.com/send?phone=+52' . $invitado['whatsapp'] . '&text=' . $text;
         }
