@@ -10,29 +10,28 @@
 
                         <table class="tabla-invitados">
                             <thead>
-                                <th>#</th>
                                 <th>Invitado</th>
+                                <th>Enviar Invitación</th>
                                 <th>Pases Disponibles</th>
                                 <th>Pases Confirmados</th>
                                 <th>WhatsApp</th>
                                 <th>Status</th>
-                                <th>Enviar Invitación</th>
+
                             </thead>
                             <tbody>
                                 @foreach ($invitados as $invitado)
                                     <tr>
-                                        <td>{{ $invitado['id'] }}</td>
                                         <td>{{ $invitado['invitado'] }}</td>
-                                        <td>{{ $invitado['pases_disponibles'] }}</td>
-                                        <td>{{ $invitado['pases_confirmados'] }}</td>
-                                        <td>{{ $invitado['whatsapp'] }}</td>
-                                        <td>{{ $invitado['status_texto'] }}</td>
                                         <td>
                                             <a href="{{ $invitado['url'] }}" target="_blank">
                                                 <img class="enviar-whats" src="{{ URL::to('/') }}/images/enviar.svg"
                                                     alt="" />
                                             </a>
                                         </td>
+                                        <td>{{ $invitado['pases_disponibles'] }}</td>
+                                        <td>{{ $invitado['pases_confirmados'] }}</td>
+                                        <td>{{ $invitado['whatsapp'] }}</td>
+                                        <td>{{ $invitado['status_texto'] }}</td>
                                     </tr>
                                 @endforeach
                             </tbody>
