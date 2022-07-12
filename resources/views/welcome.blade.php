@@ -105,10 +105,10 @@
                     parmesano.</p>
             </div>
 
-
+            <h1>CONFIRMA TU ASISTENCIA</h1>
             @if ($data['status'] == 0)
                 <div id="aceptar">
-                    <h1>CONFIRMA TU ASISTENCIA</h1>
+
                     <form id="SubmitForm">
                         <label for="#slAsiste">¿Asistirá?</label>
                         <select name="slAsiste" id="slAsiste">
