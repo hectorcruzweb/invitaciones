@@ -65,7 +65,7 @@
                 <p class="fecha">03 SEPTIEMBRE 2022 | 19:00 H</p>
                 <p class="direccion">TERRAZA, CLUB DE PLAYA</p>
                 <p class="salon">Hotel El CID Mazatlán</p>
-                <a href="https://goo.gl/maps/D5WhnTb1Ws5H51gB8" target="_blank"> ver en el mapa </a>
+                <a href="https://goo.gl/maps/Nd8MHG2nTPSvF2Ad8" target="_blank"> ver en el mapa </a>
             </div>
         </section>
 
@@ -76,7 +76,7 @@
                 <p class="fecha">03 SEPTIEMBRE 2022 | 20:00 H</p>
                 <p class="direccion">SALÓN, CLUB DE PLAYA</p>
                 <p class="salon">Hotel El CID Mazatlán</p>
-                <a href="https://goo.gl/maps/D5WhnTb1Ws5H51gB8" target="_blank"> ver en el mapa </a>
+                <a href="https://goo.gl/maps/Nd8MHG2nTPSvF2Ad8" target="_blank"> ver en el mapa </a>
             </div>
         </section>
 
