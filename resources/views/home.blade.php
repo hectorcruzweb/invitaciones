@@ -15,11 +15,12 @@
                             <thead>
                                 <th>Invitado</th>
                                 <th>Enviar Invitación</th>
+                                <th>Ver Invitación</th>
                                 <th>Pases Disponibles</th>
                                 <th>Pases Aceptados</th>
                                 <th>WhatsApp</th>
                                 <th>Status</th>
-                                <th>Ver Invitación</th>
+
                             </thead>
                             <tbody>
                                 @foreach ($invitados as $invitado)
@@ -31,16 +32,17 @@
                                                     alt="" />
                                             </a>
                                         </td>
-                                        <td>{{ $invitado['pases_disponibles'] }}</td>
-                                        <td>{{ $invitado['pases_confirmados'] }}</td>
-                                        <td>{{ $invitado['whatsapp'] }}</td>
-                                        <td>{{ $invitado['status_texto'] }}</td>
                                         <td>
                                             <a href="{{ $invitado['link'] }}" target="_blank">
                                                 <img class="enviar-whats" src="{{ URL::to('/') }}/images/ver.svg"
                                                     alt="" />
                                             </a>
                                         </td>
+                                        <td>{{ $invitado['pases_disponibles'] }}</td>
+                                        <td>{{ $invitado['pases_confirmados'] }}</td>
+                                        <td>{{ $invitado['whatsapp'] }}</td>
+                                        <td>{{ $invitado['status_texto'] }}</td>
+
                                     </tr>
                                 @endforeach
                             </tbody>
