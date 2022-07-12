@@ -40,7 +40,7 @@
             <h1>¡ NOS CASAMOS !</h1>
             <p>
                 Hola <strong><span>{{ $data['invitado'] }}</span></strong>, te invitamos a que vivas
-                este momento tan especial junto a padres y amigos.
+                este momento tan especial junto a nuestros padres y amigos.
             </p>
         </section>
 

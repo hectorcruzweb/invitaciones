@@ -20,17 +20,22 @@
                                 <th>Pases Aceptados</th>
                                 <th>WhatsApp</th>
                                 <th>Status</th>
-
                             </thead>
                             <tbody>
                                 @foreach ($invitados as $invitado)
                                     <tr>
                                         <td>{{ $invitado['invitado'] }}</td>
                                         <td>
-                                            <a href="{{ $invitado['url'] }}" target="_blank">
-                                                <img class="enviar-whats" src="{{ URL::to('/') }}/images/enviar.svg"
+                                            @if ($invitado['status'] != 0)
+                                                <img class="enviar-whats" src="{{ URL::to('/') }}/images/wn.svg"
                                                     alt="" />
-                                            </a>
+                                            @else
+                                                <a href="{{ $invitado['url'] }}" target="_blank">
+                                                    <img class="enviar-whats" src="{{ URL::to('/') }}/images/enviar.svg"
+                                                        alt="" />
+                                                </a>
+                                            @endif
+
                                         </td>
                                         <td>
                                             <a href="{{ $invitado['link'] }}" target="_blank">
