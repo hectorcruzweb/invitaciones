@@ -4,10 +4,13 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="w-100">
+
                 <div class="card">
                     <div class="card-header">Lista de Invitados</div>
-                    <div class="card-body" style="overflow-x:auto;">
+                    <div class="w-100 pr-4 mt-4">
                         <button id="print" class="btn-success p-1 float-right mb-4">Imprimir Lista</button>
+                    </div>
+                    <div class="card-body" style="overflow-x:auto;">
                         <table class="tabla-invitados">
                             <thead>
                                 <th>Invitado</th>
