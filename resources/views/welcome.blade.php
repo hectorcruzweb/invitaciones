@@ -64,7 +64,7 @@
                 <h2>CEREMONIA CIVIL</h2>
                 <p class="fecha">03 SEPTIEMBRE 2022 | 19:00 H</p>
                 <p class="direccion">TERRAZA, CLUB DE PLAYA</p>
-                <p class="salon">Hotel El CID Mazatlán</p>
+                <p class="salon">Hotel El CID Marina</p>
                 <a href="https://goo.gl/maps/Nd8MHG2nTPSvF2Ad8" target="_blank"> ver en el mapa </a>
             </div>
         </section>
@@ -75,7 +75,7 @@
                 <h2>RECEPCIÓN</h2>
                 <p class="fecha">03 SEPTIEMBRE 2022 | 20:00 H</p>
                 <p class="direccion">SALÓN, CLUB DE PLAYA</p>
-                <p class="salon">Hotel El CID Mazatlán</p>
+                <p class="salon">Hotel El CID Marina</p>
                 <a href="https://goo.gl/maps/Nd8MHG2nTPSvF2Ad8" target="_blank"> ver en el mapa </a>
             </div>
         </section>
