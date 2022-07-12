@@ -17,7 +17,6 @@
                                 <th>WhatsApp</th>
                                 <th>Status</th>
                                 <th>Enviar Invitación</th>
-                                <th>Link</th>
                             </thead>
                             <tbody>
                                 @foreach ($invitados as $invitado)
@@ -32,11 +31,6 @@
                                             <a href="{{ $invitado['url'] }}" target="_blank">
                                                 <img class="enviar-whats" src="{{ URL::to('/') }}/images/enviar.svg"
                                                     alt="" />
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="{{ $invitado['link'] }}" target="_blank">
-                                                {{ $invitado['link'] }}
                                             </a>
                                         </td>
                                     </tr>
