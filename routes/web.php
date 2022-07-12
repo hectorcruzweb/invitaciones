@@ -23,7 +23,15 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes(['register' => false]);
 
-Route::get('/', 'HomeController@invitacion')->name('invitacion');
+
+
+Route::get('/invitacion/{data?}', 'HomeController@invitacion')->name('invitacion');
+Route::get('/', 'HomeController@index')->name('index1');
+
+
+
+Route::post('submit-form', 'HomeController@confirmar');
+
 Route::group(['middleware' => 'auth'], function () {
-    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/home', 'HomeController@home')->name('home');
 });

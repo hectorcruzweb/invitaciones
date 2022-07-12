@@ -8,6 +8,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="<?= url('css/app.css') ?>" />
     <title>Confirmar Asistencia.</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -27,14 +28,12 @@
                 @else
                     ¡ Hoy es el gran día !
                 @endif
-
             </div>
         </section>
-
         <section class="we-marry padding-center">
             <h1>¡ NOS CASAMOS !</h1>
             <p>
-                Hola <span>Héctor Raúl Cruz Pérez</span>, te invitamos a que vivas
+                Hola <span>{{ $data['invitado'] }}</span>, te invitamos a que vivas
                 este momento tan especial junto a padres y amigos.
             </p>
         </section>
@@ -101,25 +100,41 @@
             </div>
 
 
-            <h1>CONFIRMA TU ASISTENCIA</h1>
-
-            <form action="#">
-                <label for="#txtNombre">Ingrese su Nombre Completo</label>
-                <input type="text" name="txtNombre" id="txtNombre"
-                    value="<?= ENV('APP_ENV') ? 'hector raul cruz perez' : '' ?>">
-                <label for="#slAsiste">¿Asistirá?</label>
-                <select name="slAsiste" id="slAsiste">
-                    <option value="">Si, asistiré. Gracias.</option>
-                    <option value="">No podré asistir.</option>
-                </select>
-                <label for="#slPAses">Pases Disponibles Confirmados</label>
-                <select name="slPAses" id="slPAses">
-                    <option value="">1 Pase</option>
-                </select>
-                <button>
-                    CONFIRMAR INVITACIÓN
-                </button>
-            </form>
+            @if ($data['status'] == 0)
+                <div id="aceptar">
+                    <h1>CONFIRMA TU ASISTENCIA</h1>
+                    <form id="SubmitForm">
+                        <label for="#slAsiste">¿Asistirá?</label>
+                        <select name="slAsiste" id="slAsiste">
+                            <option value="1">Si, asistiré. Gracias.</option>
+                            <option value="2">No podré asistir.</option>
+                        </select>
+                        <label for="#slPAses">Pases Disponibles Confirmados</label>
+                        <select name="slPAses" id="slPAses">
+                            @for ($i = 1; $i <= $data['pases_disponibles']; $i++)
+                                @if ($i > 1)
+                                    <option value="{{ $i }}">{{ $i }} Pases</option>
+                                @else
+                                    <option value="{{ $i }}">{{ $i }} Pase</option>
+                                @endif
+                            @endfor
+                        </select>
+                        <div class="d-none spinner-border my-3 pb-7"
+                            style="width: 3rem; height: 3rem; margin:0 auto 0 auto;" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <button>
+                            CONFIRMAR INVITACIÓN
+                        </button>
+                    </form>
+                </div>
+                <div class="alert alert-success mt-4 d-none" role="alert">
+                    Se ha confirmado su asistencia a nuestra boda. Gracias.
+                </div>
+                <div class="alert alert-danger  mt-4 d-none" role="alert">
+                    Lamentamos que no puedas asistir a nuestra boda.
+                </div>
+            @endif
         </section>
 
         <section class="block regalo" data-aos="fade-down">
@@ -145,3 +160,51 @@
 </body>
 
 </html>
+<script>
+    $('#SubmitForm').on('submit', function(e) {
+        e.preventDefault();
+        //let nombre = $('#txtNombre').val();
+        let confirmar = $('#slAsiste').val();
+        let pases = $('#slPAses').val();
+        $.ajax({
+            beforeSend: function() {
+                $('.alert-danger').addClass('d-none');
+                $('.alert-success').addClass('d-none');
+                $('.spinner-border').removeClass('d-none');
+            },
+            url: "/submit-form",
+            type: "POST",
+            data: {
+                "_token": "{{ csrf_token() }}",
+                //nombre: nombre,
+                confirmar: confirmar,
+                pases: pases,
+                key: "{{ $data['key'] }}"
+            },
+            success: function(response) {
+                setTimeout(() => {
+                    $('.spinner-border').addClass('d-none');
+                    if (response.success == 1) {
+                        $("#aceptar").hide();
+                        $('.alert-success').removeClass('d-none');
+                        setTimeout(() => {
+                            location.reload();
+                        }, 5000);
+                    } else {
+                        $('.alert-danger').addClass('d-none');
+                        console.log(response);
+                    }
+                }, 2000);
+            },
+            error: function(response) {
+                /*
+                $('#nameErrorMsg').text(response.responseJSON.errors.name);
+                $('#emailErrorMsg').text(response.responseJSON.errors.email);
+                $('#mobileErrorMsg').text(response.responseJSON.errors.mobile);
+                $('#messageErrorMsg').text(response.responseJSON.errors.message);
+                */
+                //console.log(response);
+            }
+        });
+    });
+</script>
