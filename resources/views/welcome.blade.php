@@ -50,7 +50,7 @@
             <div class="datos">
                 <h2>CEREMONIA RELIGIOSA</h2>
                 <p class="fecha">03 SEPTIEMBRE 2022 | 16:00 H</p>
-                <p class="direccion">PARROQUIA DEL ESPÍRITU SANTO</p>
+                <p class="direccion">parroquia del espiritu santo</p>
                 <p class="salon">
                     Calle Pino No. 31, Col. Gustavo Díaz Ordaz, Mazatlán, Sin.
                 </p>
@@ -63,7 +63,7 @@
             <div class="datos">
                 <h2>CEREMONIA CIVIL</h2>
                 <p class="fecha">03 SEPTIEMBRE 2022 | 19:00 H</p>
-                <p class="direccion">TERRAZA, CLUB DE PLAYA</p>
+                <p class="direccion">terraza, club de playa</p>
                 <p class="salon">Hotel El CID Marina</p>
                 <a href="https://goo.gl/maps/Nd8MHG2nTPSvF2Ad8" target="_blank"> ver en el mapa </a>
             </div>
@@ -74,7 +74,7 @@
             <div class="datos">
                 <h2>RECEPCIÓN</h2>
                 <p class="fecha">03 SEPTIEMBRE 2022 | 20:00 H</p>
-                <p class="direccion">SALÓN, CLUB DE PLAYA</p>
+                <p class="direccion">salón, club de playa</p>
                 <p class="salon">Hotel El CID Marina</p>
                 <a href="https://goo.gl/maps/Nd8MHG2nTPSvF2Ad8" target="_blank"> ver en el mapa </a>
             </div>

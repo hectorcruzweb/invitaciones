@@ -11113,14 +11113,13 @@ html,
 .show-contenido .block .datos .salon {
   font-size: 16px;
   line-height: 25.6px;
-  color: #46321d;
 }
 
 .show-contenido .block .datos .direccion {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: bold;
   line-height: 28.8px;
-  color: #0c2917;
+  text-transform: capitalize;
 }
 
 .show-contenido .cena {
